@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La Casa de Papel CTF</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+  </head>
+  <body>
+    <div class="landing">
+      <div class="mask"></div>
+      <h1>hackRITual <br />Money Heist Chapter</h1>
+      <button id="enter">Ready to Heist?</button>
+      <div class="money-rain"></div>
+    </div>
+    <div class="main-content hidden">
+      <main>
+        <section id="intro" class="reveal">
+          <div id="typewriter"></div>
+          <button id="start-heist" class="hidden">Start the Heist</button>
+        </section>
+      </main>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>
